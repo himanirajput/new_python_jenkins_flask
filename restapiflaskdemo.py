@@ -80,7 +80,7 @@ def createProduct():
     result = product_schema.dump(product.create())   #inserting into db ; it is using flask module ; if flask wasn't used , we would have to write queries manually
     return make_response(jsonify({"product":result}),201)      # 201 - success , _____ is created
 
-@app.route('/products',methods=['GET'])
+@app.route('/ibm',methods=['GET'])
 def getAllProducts():
     get_products=Product.query.all()
     productSchema=ProductSchema(many=True)
