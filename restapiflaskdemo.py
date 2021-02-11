@@ -7,6 +7,7 @@ Created on Wed Jan 27 10:51:10 2021
 In express : app = express()
              app.get('',())
              app.post('',())
+             app.put('',())
              
              
 SQLAlchemy : ORM - object-relation mapping             
